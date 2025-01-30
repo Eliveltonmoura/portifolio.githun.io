@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Elivelton e
+                sou apaixonado por tecnologia, desenvolvimento web e sistemas embarcados. Atualmente, curso Ciência da
+                Computação na UFC e tenho experiência com JavaScript, TypeScript, Node.js, React, SQL, C e C++. Gosto de
+                enfrentar desafios, aprender novas tecnologias e transformar ideias em soluções eficientes.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto. Tecnologias utilizadas: HTML, CSS, JavaScript.</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto. Tecnologias utilizadas: React, Node.js.</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto. Tecnologias utilizadas: Python, Django.</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elivelton Moura. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
