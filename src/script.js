@@ -4,3 +4,4 @@ document.getElementById('form-contato').addEventListener('submit', function(even
     alert('Mensagem enviada com sucesso!');
     // Aqui você pode adicionar a lógica para enviar o formulário
 });
+

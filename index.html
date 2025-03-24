@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,7 +29,8 @@
             <h2>Sobre Mim</h2>
             <p>Olá! Meu nome é Elivelton e
                 sou apaixonado por tecnologia, desenvolvimento web e sistemas embarcados. Atualmente, curso Ciência da
-                Computação na UFC e tenho experiência com JavaScript, TypeScript, Node.js, React, SQL, C e C++. Gosto de
+                Computação na UFC e tenho experiência com JavaScript, TypeScript, Node.js, React, SQL, C e C++,PHP.
+                Gosto de
                 enfrentar desafios, aprender novas tecnologias e transformar ideias em soluções eficientes.</p>
         </div>
     </section>
@@ -38,38 +41,108 @@
             <div class="projetos-grid">
                 <div class="projeto">
                     <h3>Projeto 1</h3>
-                    <p>Descrição breve do projeto. Tecnologias utilizadas: HTML, CSS, JavaScript.</p>
-                    <a href="#" class="btn">Ver Projeto</a>
+                    <p>Desenvolvimento de um blog estático utilizando PHP, HTML e CSS. O projeto consiste em uma página
+                        estruturada com HTML e estilizada com CSS, enquanto o PHP é utilizado para organizar e exibir o
+                        conteúdo de forma modular. Os dados das postagens estão embutidos diretamente no código.</p>
+                    <div class="container-img">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto1/Captura de tela 2025-03-24 082627.png"
+                                            alt="Foto 01">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto1/Captura de tela 2025-03-24 082705.png"
+                                            alt="Foto 02">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto1/Captura de tela 2025-03-24 082733.png"
+                                            alt="Foto 03">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Eliveltonmoura/Projetos_com_PHP/tree/main/Blog" class="btn">Ver
+                        Projeto</a>
                 </div>
                 <div class="projeto">
                     <h3>Projeto 2</h3>
-                    <p>Descrição breve do projeto. Tecnologias utilizadas: React, Node.js.</p>
-                    <a href="#" class="btn">Ver Projeto</a>
+                    <p>Este projeto é uma réplica simplificada do Twitter, desenvolvida com HTML, CSS e TypeScript. Ele
+                        permite que os usuários realizem login, criem postagens e visualizar seus perfis. A interface
+                        foi projetada para ser intuitiva e responsiva, proporcionando uma experiência semelhante à da
+                        plataforma original.</p><p class="oculto">O objetivo do projeto foi aprimorar habilidades em desenvolvimento frontend e tipagem com
+                        TypeScript, além de explorar conceitos como manipulação de estado e estruturação de código em
+                        aplicações web..</p>
+                    <div class="container-img">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto2/login.png" alt="Foto 01">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto2/home.png" alt="Foto 02">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto2/perfile.png" alt="Foto 03">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Eliveltonmoura/Tzeeter" class="btn">Ver
+                        Projeto</a>
                 </div>
                 <div class="projeto">
                     <h3>Projeto 3</h3>
-                    <p>Descrição breve do projeto. Tecnologias utilizadas: Python, Django.</p>
-                    <a href="#" class="btn">Ver Projeto</a>
+                    <p>Desenvolvimento de uma loja virtual moderna e dinâmica utilizando HTML, CSS e Vite, com Routes para organizar a navegação entre páginas como home, catálogo, produtos e carrinho. O projeto foca em desempenho, usabilidade e experiência do usuário, garantindo uma interface responsiva e fluida..</p>
+                    <div class="container-img">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto3/home.png"
+                                            alt="Foto 01">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto3/produto.png"
+                                            alt="Foto 02">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="./assets/img/projeto3/produto-no-carrinho.png"
+                                            alt="Foto 03">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Eliveltonmoura/Projetos_com_PHP/tree/main/Blog" class="btn">Ver
+                        Projeto</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contato" class="section">
-        <div class="container">
-            <h2>Contato</h2>
-            <form id="form-contato">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-
-                <button type="submit" class="btn">Enviar</button>
-            </form>
         </div>
     </section>
 
@@ -78,8 +151,9 @@
             <p>&copy; 2025 Elivelton Moura. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/src/js/script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
