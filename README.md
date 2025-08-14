@@ -2,7 +2,7 @@
 
 ## Sobre mim
 
-Sou apaixonado por tecnologia, desenvolvimento web e sistemas embarcados. Atualmente, curso Ciência da Computação na UFC e tenho experiência com diversas tecnologias, incluindo:
+Sou apaixonado por tecnologia, desenvolvimento web e sistemas embarcados. Atualmente, curso Engenharia de Compudação na UFC e tenho experiência com diversas tecnologias, incluindo:
 
 - 🔹 **Linguagens**: JavaScript, TypeScript, C, C++
 - 🚀 **Back-end**: Node.js, SQL, MongoDB
