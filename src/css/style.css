@@ -229,6 +229,14 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     font-size: 6rem;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* ========== SECTIONS GERAIS ========== */
@@ -250,14 +258,13 @@ h2 {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
-    text-align: center;
     line-height: 1.8;
 }
 
 .about-content p {
     margin-bottom: 1.5rem;
     text-align: justify;
-
+    hyphens: auto;
 }
 
 .about-content strong {
@@ -329,6 +336,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    align-items: stretch;
 }
 
 .project-card {
@@ -337,6 +345,9 @@ h2 {
     overflow: hidden;
     box-shadow: 0 4px 20px var(--shadow);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -355,19 +366,6 @@ h2 {
     color: white;
     position: relative;
     overflow: hidden;
-}
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 1px;
-    width: 100%;
-    height: 40%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
 }
 
 .project-image::after {
@@ -390,6 +388,9 @@ h2 {
 
 .project-content {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-content h3 {
@@ -404,6 +405,8 @@ h2 {
     color: var(--text-color);
     opacity: 0.9;
     line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .project-tags {
@@ -411,15 +414,7 @@ h2 {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 1rem 0;
-}
-
-.profile-image {
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-
+    margin-top: auto;
 }
 
 .tag {
@@ -447,6 +442,7 @@ h2 {
     text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
+    text-align: center;
     transition: all 0.3s;
 }
 
@@ -454,6 +450,20 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
     color: white;
+}
+
+/* ========== MODAL ========== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
 }
 
 /* ========== FOOTER ========== */
@@ -668,4 +678,22 @@ footer p {
 ::-moz-selection {
     background: var(--primary-color);
     color: white;
+}
+
+
+.project-card:hover .project-thumb {
+    transform: scale(1.05);
+}
+
+.project-content p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
