@@ -106,67 +106,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ========== MOBILE MENU (adicione se necessário) ==========
-// Se você adicionar um menu hamburguer no futuro, descomente e ajuste:
-/*
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navMenu = document.querySelector('nav ul');
-
-if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-    });
-
-    // Fecha o menu ao clicar em um link
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
-        });
-    });
-}
-*/
-
-
-// ========== FORMULÁRIO DE CONTATO (adicione se implementar) ==========
-// Exemplo de validação de formulário:
-/*
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Validações básicas
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        
-        if (!name || !email || !message) {
-            alert('Por favor, preencha todos os campos!');
-            return;
-        }
-        
-        if (!validateEmail(email)) {
-            alert('Por favor, insira um email válido!');
-            return;
-        }
-        
-        // Aqui você enviaria os dados para o servidor
-        console.log('Formulário enviado:', { name, email, message });
-        alert('Mensagem enviada com sucesso!');
-        contactForm.reset();
-    });
-}
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-*/
-
-
 // ========== CONSOLE MESSAGE ==========
 // Mensagem personalizada no console
 console.log(
